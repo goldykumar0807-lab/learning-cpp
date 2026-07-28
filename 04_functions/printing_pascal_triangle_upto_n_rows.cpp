@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
-int fac(int n){
-    int fac=1;
+long long fac(int n){
+    long long fac=1;
     for(int i=n;i>=1;i--){
         fac*=i;
     }
     return fac;
 }
-int combination(int n,int r){
-    int ncr = fac(n)/(fac(r)*fac(n-r));
+long long combination(int n,int r){
+    long long ncr = fac(n)/(fac(r)*fac(n-r));
     return ncr;
 }
 int main(){
